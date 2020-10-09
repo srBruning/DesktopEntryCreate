@@ -1,11 +1,7 @@
-import sys
-import subprocess
-from os.path import expanduser
-import pathlib
+
 import os
+from os.path import expanduser
 
-
-pwd = os.path.dirname(os.path.abspath(__file__))
 
 def userHome():
 	return expanduser("~")
@@ -16,7 +12,7 @@ def defeultDesktopEntryParams():
 		["Version","1.0"],
 		["Name","Add Menu"],
 		["Comment","Adicions laçador ao menu"],
-		["Icon",pwd+"/addmenu.png"],
+		["Icon","/usr/lib/addmenu/addmenu.png"],
 		["GenericName","add menu"],
 		["Exec","/usr/bin/addmenu"],
 		["Terminal","false"],
